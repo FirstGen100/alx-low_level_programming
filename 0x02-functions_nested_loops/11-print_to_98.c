@@ -2,7 +2,10 @@
 #include <stdlib.h>
 
 void print_to_98(int n);
-
+/**
+ * main - Prints the letters of the alphabet
+ * return: 0 if successful
+*/
 int main()
 {
     print_to_98(0);
@@ -17,7 +20,11 @@ int main()
 
     return 0;
 }
-
+/**
+ * print_to_98 - Prints the numbers and ends at 98 
+ * @n: the user variable
+ * return: 0 if successful
+*/
 void print_to_98(int n)
 {
 	if (n < 98){
