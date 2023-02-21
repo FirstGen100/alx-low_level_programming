@@ -13,9 +13,9 @@ int main()
 int _islower(int c){
 
     if (c >= 'a' && c <= 'z'){
-        printf("1 \n");
+        return 1;
     }else{
-        printf("0 \n");
+        return 0;
         }
 
     }
