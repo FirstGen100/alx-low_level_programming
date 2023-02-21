@@ -5,7 +5,7 @@
  * return: always 0
 */
 int _islower(int c);
-int main()
+int main(void)
 {
     char r = 'c';
     _islower(r);
