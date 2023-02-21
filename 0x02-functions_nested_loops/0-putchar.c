@@ -4,7 +4,8 @@
 int main(void)
 {
 /**
- *The function main prints _putchar
+ * main - the main function prints _putchar
+ * Return: 0 if execution success
  */
 printf("_putchar\n");
 return (0);
