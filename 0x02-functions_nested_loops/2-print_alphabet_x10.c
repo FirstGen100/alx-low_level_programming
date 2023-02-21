@@ -7,7 +7,8 @@
 void print_alphabet_x10(void);
 int main()
 {
-    for(int i=0; i<=9; i++)
+    int i;
+    for(i=0; i<=9; i++)
     {
         void print_alphabet_x10();
         printf("\n");
