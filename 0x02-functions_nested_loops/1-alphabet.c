@@ -5,6 +5,7 @@
  * return: 0 if successful
 */
 void print_alphabet(void);
+
 int main(void)
 {
 print_alphabet();
