@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+* main - 
+* return: always 0
+*/
 int print_last_digit(int);
-
-
 int main()
 {
     int r;
@@ -16,7 +17,10 @@ int main()
 
     return 0;
 }
-
+/**
+* print_last_digit - prints the last digit of a number
+* return: return the number
+*/
 int print_last_digit(int num){
 
     if (num < 0){
