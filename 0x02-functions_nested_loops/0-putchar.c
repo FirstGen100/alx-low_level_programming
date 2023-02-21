@@ -3,6 +3,6 @@
 
 int main(void) /* The function main prints _putchar */
 {
-  printf("_putchar\n");
-  return (0);
+printf("_putchar\n");
+return (0);
 }
