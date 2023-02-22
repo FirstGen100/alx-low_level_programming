@@ -5,7 +5,9 @@
 * return: always 0
 */
 int _abs(int);
+
 int r;
+
 r = _abs(-1);
 printf("%d \n",r);
 r = _abs(0);
