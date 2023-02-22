@@ -9,13 +9,13 @@ int _abs(int);
 int r;
 
 r = _abs(-1);
-printf("%d \n",r);
+_putchar(r + '\n');
 r = _abs(0);
-printf("%d \n",r);
+_putchar(r + '\n');
 r = _abs(1);
-printf("%d \n",r);
+_putchar(r + '\n');
 r = _abs(-98);
-printf("%d \n",r);
+_putchar(r + '\n');
 
 /**
 * _abs - returns the absolute value of an iteger
