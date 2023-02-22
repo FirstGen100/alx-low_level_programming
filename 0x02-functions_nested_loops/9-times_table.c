@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "main.h"
 
 /*
@@ -6,12 +5,8 @@
  * return: always 0
  */
 void times_table(void);
-int main(void)
-{
-    times_table();
+times_table();
 
-    return 0;
-}
 /**
 * times_table - prints the times table of 9 starting with 0
 * return: 0 if successful
