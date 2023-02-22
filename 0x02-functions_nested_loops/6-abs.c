@@ -1,5 +1,5 @@
+#include "main.h"
 #include <stdio.h>
-#include <stdlib.h>
 /**
 * main - 
 * return: always 0
@@ -21,13 +21,18 @@ int main()
 }
 /**
 * _abs - returns the absolute value of an iteger
-* return: return the number
+* return: return the number's absolute value
 */
-int _abs(int num){
+int _abs(int num)
+{
 
-    if (num < 0){
+    if (num < 0)
+    {
         num = (-1)*num;
+        return num;
     }
-
-    return num;
+    else
+    {
+        return num;
     }
+}
