@@ -7,12 +7,12 @@
 void print_rev(char *s)
 {
 int count, i, j;
-for(count = 0; s[count] != '\0';)
+for (count = 0; s[count] != '\0';)
 {
 count++;
 }
 i = 0;
-while(i < count)
+while (i < count)
 {
 j = s[i];
 s[i] = s[count];
