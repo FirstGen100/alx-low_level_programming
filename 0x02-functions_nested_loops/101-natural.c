@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /*
  * main - prints the sum of numbers divisible by 3 or 5 between 0 and 1024
