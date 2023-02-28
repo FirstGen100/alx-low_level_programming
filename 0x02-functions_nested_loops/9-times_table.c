@@ -11,7 +11,7 @@ for (rows = 0; rows <= 9; rows++)
 {
 for (cols = 0; cols <= 9; cols++)
 {
-printf(rows * cols);
+print(rows * cols);
 }
 _putchar('\n');
 }
