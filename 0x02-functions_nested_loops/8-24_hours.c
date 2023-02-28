@@ -4,7 +4,7 @@
 * jack_bauer - prints the time starting from 00:00 to 23:59
 * return: always 0
 */
-void jack_bauer()
+void jack_bauer(void)
 {
 int hour, minute;
 for (hour = 0; hour < 24; hour++)
