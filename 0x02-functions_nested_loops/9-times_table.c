@@ -11,8 +11,8 @@ for (rows = 0; rows <= 9; rows++)
 {
 for (cols = 0; cols <= 9; cols++)
 {
-printf("%d ", rows * cols);
-printf(",");
+printf("%d,", rows * cols);
+printf(" ");
 }
 printf("\n");
 }
