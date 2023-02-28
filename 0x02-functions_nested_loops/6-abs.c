@@ -1,29 +1,12 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* main - 
-* return: always 0
-*/
-int _abs(int);
-
-int r;
-
-r = _abs(-1);
-printf("%d\n", r);
-r = _abs(0);
-printf("%d\n", r);
-r = _abs(1);
-printf("%d\n", r);
-r = _abs(-98);
-printf("%d\n", r);
-
-/**
 * _abs - returns the absolute value of an iteger
+* @num: the number is converted to its absolute value
 * return: return the number's absolute value
 */
 int _abs(int num)
 {
-
     if (num < 0)
     {
         num = (-1)*num;
