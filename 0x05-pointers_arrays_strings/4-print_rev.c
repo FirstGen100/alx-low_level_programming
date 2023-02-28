@@ -6,19 +6,14 @@
 */
 void print_rev(char *s)
 {
-int count, i, j;
-for (count = 0; s[count] != '\0';)
+char temp;
+int i, len;
+len = strlen(s) - 1;
+for(i = 0; i < strlen(s) / 2; i++)
 {
-count++;
+temp = s[i];
+s[i] = s[len];
+s[len--] = temp;
 }
-i = 0;
-while (i < count)
-{
-j = s[i];
-s[i] = s[count];
-s[count] = j;
-i++;
-count--;
-}
-printf("%s\n", s);
+printf("%s", str);
 }
