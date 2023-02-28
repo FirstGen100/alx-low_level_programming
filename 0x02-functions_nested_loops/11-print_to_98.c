@@ -12,7 +12,7 @@ if (n < 98)
 {
 for (x = n; x <= 98; x++)
 {
-_putchar('0' + x);
+printf("%d ", x);
 if (98 - x != 0)
 {
 printf (", ");
@@ -23,7 +23,7 @@ else if (n > 98)
 {
 for (y = n; y >= 98; y--)
 {
-_putchar('0' + y);
+printf("%d ", y);
 if (y - 98 != 0)
 {
 printf (", ");
@@ -32,6 +32,6 @@ printf (", ");
 }
 else
 {
-_putchar('0' + n);
+printf("%d ", n);
 }
 }
