@@ -12,6 +12,6 @@ for (count = 0; s[count] != '\0';)
 {
 count++;
 }
-printf(count);
+printf("%d", count);
 return (count);
 }
