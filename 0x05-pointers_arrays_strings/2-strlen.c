@@ -9,8 +9,8 @@
 int _strlen(char *s)
 {
 int count;
-*s = &s;
-for (count = 0; s[count] != '\0'; count++)
+char word[] = &s;
+for (count = 0; word[count] != '\0'; count++)
 {
 printf("%d", count);
 }
