@@ -12,11 +12,12 @@ if (num < 0)
 num = (-1) * num;
 num = num % 10;
 _putchar('0' + num);
+return (num);
 }
 else
 {
 num = num % 10;
 _putchar('0' + num);
-}
 return (num);
+}
 }
