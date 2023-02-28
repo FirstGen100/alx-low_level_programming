@@ -15,7 +15,7 @@ for (x = n; x <= 98; x++)
 _putchar('0' + x);
 if (98 - x != 0)
 {
-_putchar(', ');
+_putchar(", ");
 }
 }
 }
