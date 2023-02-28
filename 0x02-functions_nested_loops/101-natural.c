@@ -6,20 +6,20 @@
  */
 int main(void)
 {
-    int n;
-    n = 0;
+int n, count;
+n = 0;
+for (count = 0; count < 1024; count++)
+{
+if ((count % 3 == 0) || (count % 5 == 0))
+{
+n = n + count;
+}
+else
+{
+continue;
+}
+}
+printf("%d is the sum of all numbers divisible by 3 or 5 between 0 and 1024(excluded)\n", n);
 
-    for (int count=0; count<1024; count++)
-    {
-        if ((count%3==0) || (count%5==0))
-        {
-            n = n + count;
-        }
-        else{
-            continue;
-        }
-    }
-    printf("%d is the sum of all numbers divisible by 3 or 5 between 0 and 1024(excluded)\n", n);
-
-    return 0;
+return (0);
 }
