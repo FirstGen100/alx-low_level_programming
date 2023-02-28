@@ -5,7 +5,6 @@
  * main - prints the times table of 9 starting with 0
  * return: always 0
  */
-void reset_to_98(int *n);
 
 int n = 402;
 printf("n=%d\n", n);
