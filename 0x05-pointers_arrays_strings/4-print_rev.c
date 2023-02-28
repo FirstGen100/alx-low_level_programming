@@ -4,16 +4,28 @@
 * print_rev - prints string in reverse
 * @s: pointer to the string
 */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-char temp;
-int i, len;
-len = strlen(s) - 1;
-for(i = 0; i < strlen(s) / 2; i++)
+int i, count, k;
+char *a, temp;
+
+a = s;
+
+while (s[count] != '\0')
 {
-temp = s[i];
-s[i] = s[len];
-s[len--] = temp;
+		count++;
 }
-printf("%s", str);
+
+for (k = 1; k < count; k++)
+{
+		a++;
+}
+
+for (i = 0; i < (count / 2); i++)
+{
+		temp = s[i];
+		s[i] = *a;
+		*a = temp;
+		a--;
+}
 }
