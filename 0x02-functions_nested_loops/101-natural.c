@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /*
- * Main - prints the sum of numbers divisible by 3 or 5 between 0 and 1024
+ * main - prints the sum of numbers divisible by 3 or 5 between 0 and 1024
  * Return: always 0
  */
 int main(void)
