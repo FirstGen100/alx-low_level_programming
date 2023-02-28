@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * print_to_98 - Prints the numbers and ends at 98 
+ * print_to_98 - Prints the numbers and ends at 98
  * @n: the user variable
  * return: 0 if successful
 */
@@ -13,7 +13,10 @@ if (n < 98)
 for (x = n; x <= 98; x++)
 {
 printf("%d ", x);
+if (98 - x != 0)
+{
 printf(",");
+}
 }
 }
 else if (n > 98)
