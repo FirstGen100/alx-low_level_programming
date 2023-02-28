@@ -15,7 +15,7 @@ for (x = n; x <= 98; x++)
 _putchar('0' + x);
 if (98 - x != 0)
 {
-printf(", ");
+_putchar(', ');
 }
 }
 }
@@ -23,15 +23,15 @@ else if (n > 98)
 {
 for (y = n; y >= 98; y--)
 {
-printf("%d", y);
+_putchar('0' + y);
 if (y - 98 != 0)
 {
-printf(", ");
+_putchar(', ');
 }
 }
 }
 else
 {
-printf("%d ", n);
+_putchar('0' + n);
 }
 }
