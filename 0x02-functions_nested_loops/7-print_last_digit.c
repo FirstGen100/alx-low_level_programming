@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
 * print_last_digit - prints the last digit of a number
 * @num: the number to be tested
