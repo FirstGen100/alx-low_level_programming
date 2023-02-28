@@ -16,6 +16,7 @@ _putchar('0' + num);
 else
 {
 num = num % 10;
+_putchar('0' + num);
 }
 return (num);
 }
