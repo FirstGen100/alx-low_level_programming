@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
 /**
 * print_sign - prints whether a number is positive, 0 or negative
 * @n: The number to be tested
