@@ -15,7 +15,7 @@ return (num);
 }
 else
 {
-_putchar((num % 10) + '0');
+_putchar((int)(num % 10));
 return (num);
 }
 }
