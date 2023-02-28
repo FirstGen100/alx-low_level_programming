@@ -13,6 +13,6 @@ for (cols = 0; cols <= 9; cols++)
 {
 printf("%d", rows * cols);
 }
-_putchar('\n');
+printf("\n");
 }
 }
