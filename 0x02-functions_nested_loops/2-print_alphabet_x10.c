@@ -4,11 +4,11 @@
  * print_alphabet_x10 - Prints the alphabet in lowercase 10 times
  * return: Always 0 if success
 */
-void print_alphabet_x10()
+void print_alphabet_x10(void)
 {
 int count;
 count = 1;
-while (count <=10)
+while (count <= 10)
 {
 char alphabet;
 alphabet = 'a';
@@ -17,7 +17,7 @@ while (alphabet <= 'z')
 _putchar(alphabet);
 alphabet++;
 }
- count++;
+count++;
 _putchar('\n');
 }
 }
