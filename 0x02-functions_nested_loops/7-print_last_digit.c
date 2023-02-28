@@ -11,7 +11,7 @@ if (num < 0)
 {
 num = (-1) * num;
 num = num % 10;
-printf(num);
+printf("%d", num);
 return (num);
 }
 else
