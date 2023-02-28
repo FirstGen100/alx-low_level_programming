@@ -12,18 +12,18 @@ if (n < 98)
 {
 for(x = n; x <= 98; x++)
 {
-_putchar(x + ',');
+printf("%d, ", x);
 }
 }
 else if(n > 98)
 {
 for(y = n; y>=98; y--)
 {
-_putchar(y + ',');
+printf("%d, ", y);
 }
 }
 else
 {
-_putchar(n);
+printf("%d", n);
 }
 }
