@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /*
- * main - prints the sum of numbers divisible by 3 or 5 between 0 and 1024
- * return: always 0
+ * Main - prints the sum of numbers divisible by 3 or 5 between 0 and 1024
+ * Return: always 0
  */
 int main(void)
 {
@@ -19,7 +19,7 @@ else
 continue;
 }
 }
-printf("%d is the sum of all numbers divisible by 3 or 5 between 0 and 1024(excluded)\n", n);
+printf("%d\n", n);
 
 return (0);
 }
