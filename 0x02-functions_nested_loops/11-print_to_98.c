@@ -15,7 +15,7 @@ for (x = n; x <= 98; x++)
 _putchar('0' + x);
 if (98 - x != 0)
 {
-_putchar(", ");
+printf (", ");
 }
 }
 }
@@ -26,7 +26,7 @@ for (y = n; y >= 98; y--)
 _putchar('0' + y);
 if (y - 98 != 0)
 {
-_putchar(', ');
+printf (", ");
 }
 }
 }
