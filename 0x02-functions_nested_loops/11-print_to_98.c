@@ -17,6 +17,9 @@ if (98 - x != 0)
 {
 printf(", ");
 }
+else
+{
+printf(" ");
 }
 }
 else if (n > 98)
@@ -28,10 +31,14 @@ if (y - 98 != 0)
 {
 printf(", ");
 }
+else
+{
+printf(" ");
+}
 }
 }
 else
 {
-printf("%d ", n);
+printf("%d, ", n);
 }
 }
