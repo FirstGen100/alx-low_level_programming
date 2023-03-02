@@ -7,7 +7,7 @@
 void print_rev(char *s)
 {
 int count, i, j;
-char rev[100];
+char rev[10000];
 count = 0;
 for (count = 0; s[count] != '\0';)
 {
