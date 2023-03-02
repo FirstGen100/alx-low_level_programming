@@ -19,5 +19,4 @@ for (i = 0; i < count; i++)
 rev[i] = s[j];
 j--;
 }
-printf("%s", rev);
 }
