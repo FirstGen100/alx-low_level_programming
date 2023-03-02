@@ -13,31 +13,25 @@ if (n < 98)
 {
 for (x = n; x <= 98; x++)
 {
-printf("%d\n", x);
+printf("%d", x);
 if (98 - x != 0)
 {
 printf(", ");
 }
-else
-{
-printf(" ");
 }
-}
+printf("\n");
 }
 else if (n > 98)
 {
 for (y = n; y >= 98; y--)
 {
-printf("%d\n", y);
+printf("%d", y);
 if (y - 98 != 0)
 {
 printf(", ");
 }
-else
-{
-printf(" ");
 }
-}
+printf("\n");
 }
 else
 {
