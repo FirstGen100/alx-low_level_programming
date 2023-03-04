@@ -10,14 +10,14 @@ void puts_half(char *str)
 int count, check, i;
 
 for (count=0; str[count] != '\0'; count++);
-check = (count) % 2;
+check = count % 2;
 if (check == 0)
 {
 for (i = (count) / 2; i <= count; i++)
 {
 printf("%c", str[i]);
 }
-print("\n");
+printf("\n");
 }
 else
 {
@@ -25,6 +25,6 @@ for (i = (count - 1) / 2; i <= count; i++)
 {
 printf("%c", str[i]);
 }
-print("\n");
+printf("\n");
 }
 }
