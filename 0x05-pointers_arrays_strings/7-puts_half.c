@@ -17,6 +17,7 @@ for (i = (count) / 2; i <= count; i++)
 {
 printf("%c", str[i]);
 }
+print("\n");
 }
 else
 {
@@ -24,5 +25,6 @@ for (i = (count - 1) / 2; i <= count; i++)
 {
 printf("%c", str[i]);
 }
+print("\n");
 }
 }
