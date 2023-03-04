@@ -14,7 +14,7 @@ if (check == 0)
 {
 for (i = (count) / 2; i <= count; i++)
 {
-printf("%c", str[i]);
+_putchar(str[i]);
 }
 printf("\n");
 }
