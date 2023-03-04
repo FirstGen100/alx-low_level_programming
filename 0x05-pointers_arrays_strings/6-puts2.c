@@ -7,11 +7,12 @@
 */
 void puts2(char *str)
 {
-int count;
+int count, check;
 
 for (count = 0; str[count] != '\0'; count++)
 {
-if ((str[count]) % 2 == 0)
+check = count % 2;
+if (check == 0)
 {
 printf("%c", str[count]);
 }
