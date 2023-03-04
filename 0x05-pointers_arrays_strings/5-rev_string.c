@@ -4,19 +4,26 @@
 * rev_string - prints string in reverse
 * @s: pointer to the string
 */
-void rev_string(char *s)
+void print_rev(char *s)
 {
-int count, i, j;
-char rev[10000];
+char temp;
+
+int leng, g, count;
 count = 0;
-for (count = 0; s[count] != '\0';)
+for(leng=0; s[leng] != '\0';)
 {
-count++;
+    leng++;
 }
-j = count - 1;
-for (i = 0; i < count; i++)
+// iterate through each and every character of the string for printing it backwards or reverse direction
+
+for(g = (leng-1); g >= 0; g--)
 {
-rev[i] = s[j];
-j--;
+    if(count < (leng)/2)
+    {
+        temp = s[count];
+        s[count] = s[g];
+        s[g] = temp;
+        count++;
+    }
 }
 }
