@@ -8,7 +8,7 @@
 void print_array(int *a, int n)
 {
 int pos;
-for (pos = a[n]; a[pos]! = '\0'; pos++)
+for (pos = a[n]; a[pos] != '\0'; pos++)
 {
 printf("%d, ", a[pos]);
 }
