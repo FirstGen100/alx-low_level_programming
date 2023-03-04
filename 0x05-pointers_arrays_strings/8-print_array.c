@@ -14,7 +14,7 @@ if (n > i)
 {
 printf("%d, ", a[i]);
 }
-else
+else if(n = i)
 {
 printf("%d", a[i]);
 }
