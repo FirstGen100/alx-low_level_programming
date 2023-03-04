@@ -22,7 +22,7 @@ else
 {
 for (i = (count - 1) / 2; i <= count; i++)
 {
-_putchar(str[i);
+_putchar(str[i]);
 }
 printf("\n");
 }
