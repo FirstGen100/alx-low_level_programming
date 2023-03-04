@@ -11,7 +11,7 @@ int count;
 
 for (count = 0; str[count] != '\0'; count++)
 {
-if((str[count]) % 2 == 0)
+if ((str[count]) % 2 == 0)
 {
 printf("%c", str[count]);
 }
