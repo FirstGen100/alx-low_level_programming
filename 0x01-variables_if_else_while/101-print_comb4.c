@@ -21,6 +21,7 @@ if ((ones == 0 && tens == 1 && hundreds == 2) ||
 (ones == 1 && tens == 2 && hundreds == 0) ||
 (ones == 2 && tens == 0 && hundreds == 1) ||
 (ones == 2 && tens == 1 && hundreds == 0))
+{
 continue;
 putchar(ones + '0');
 putchar(tens + '0');
@@ -30,9 +31,7 @@ if (ones < 7 || tens < 8 || hundreds < 9)
 putchar(',');
 putchar('');
 }
-}
-}
-}
+
 putchar('\n');
  
 return (0);
