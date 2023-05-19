@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-/* printing the alphabet */
+/**
+*main - printing the alphabet
+*Return: 0 (success)
+*/
 int main(void)
 {
 	char c;
@@ -9,7 +12,7 @@ int main(void)
 		putchar(c);
 	for (c = 'A'; c <= 'Z'; c++)
 		putchar(c);
-		putchar('\n');
+	putchar('\n');
 
 	return (0);
 }
