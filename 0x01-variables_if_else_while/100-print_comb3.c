@@ -7,24 +7,24 @@
 */
 int main(void)
 {
-int first;
-int second;
+  int tens;
+  int ones;
 
-for (second = 0; second <= 9; second++)
-{
-for (first = second + 1; first <= 9; second++)
-{
-putchar(first + '0');
-putchar(second, first)
+  for (tens = 0; tens <= 9; tens++)
+    {
+      for (ones = tens + 1; ones <= 9; ones++)
+	{
+	  putchar(tens + '0');
+	  putchar(ones + '0');
 
-if (second < 8)
-{
-putchar(',');
-putchar(' ');
-}
-}
-}
-putchar('\n');
+	  if (tens < 8)
+	    {
+	      putchar(',');
+	      putchar(' ');
+	    }
+	}
+    }
+  putchar('\n');
 
-return (0);
+  return (0);
 }
