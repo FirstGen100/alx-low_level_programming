@@ -9,13 +9,14 @@ int main(void)
 {
 int first;
 int second;
-	
+
 for (second = 0; second <= 9; second++)
 {
 for (first = second + 1; first <= 9; second++)
 {
 putchar(first + '0');
-	
+putchar('0' + first)
+
 if (second < 8)
 {
 putchar(',');
