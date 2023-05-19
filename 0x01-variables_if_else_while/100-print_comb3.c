@@ -15,7 +15,7 @@ for (second = 0; second <= 9; second++)
 for (first = second + 1; first <= 9; second++)
 {
 putchar(first + '0');
-putchar('0' + first)
+putchar(second, first)
 
 if (second < 8)
 {
