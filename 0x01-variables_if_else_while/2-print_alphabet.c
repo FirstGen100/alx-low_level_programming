@@ -1,12 +1,11 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - start
  *
- * Return: Always 0 (Success)
+ * Return: 0 (Success)
  */
 int main(void)
 {
-
 	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
