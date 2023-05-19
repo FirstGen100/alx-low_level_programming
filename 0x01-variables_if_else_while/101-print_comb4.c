@@ -16,10 +16,12 @@ for (tens = ones + 1; tens < 9; tens++)
 for (hundreds = tens + 1; hundreds < 10; hundreds++)
 {
 // remove duplicate numbers
-if ((ones == 0 && tens == 1 && hundreds == 2) || (ones == 1 && tens == 0 && hundreds == 2) ||
-(ones == 1 && tens == 2 && hundreds == 0) || (ones == 2 && tens == 0 && hundreds == 1) ||
+if ((ones == 0 && tens == 1 && hundreds == 2) ||
+(ones == 1 && tens == 0 && hundreds == 2) ||
+(ones == 1 && tens == 2 && hundreds == 0) ||
+(ones == 2 && tens == 0 && hundreds == 1) ||
 (ones == 2 && tens == 1 && hundreds == 0))
-continue
+continue;
 putchar(ones + '0');
 putchar(tens + '0');
 putchar(hundreds + '0');
