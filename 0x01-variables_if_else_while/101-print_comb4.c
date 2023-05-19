@@ -31,6 +31,9 @@ if (ones < 7 || tens < 8 || hundreds < 9)
 putchar(',');
 putchar('');
 }
+}
+}
+}
 
 putchar('\n');
  
