@@ -30,4 +30,3 @@ putchar(' ');
 }
 return (0);
 }
-}
