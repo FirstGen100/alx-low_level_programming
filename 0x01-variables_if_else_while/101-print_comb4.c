@@ -1,34 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-/**
-* main - Print combinations of two digit numbers
-*
-* Return: 0 (Success)
-*/
-int main(void)
-{
-int tens;
-int ones;
-int hundreds;
+int main(){
+    int ones, tens, hundreds;
 
-for (tens = 0; tens <= 9; tens++)
-{
-for (ones = tens + 1; ones <= 9; ones++)
-{
-for (hundreds = ones + 1; hundreds <= 10 hundreds++)
-{
-putchar(tens + '0');
-putchar(ones + '0');
-putchar(hundreds + '0');
-if (tens < 8)
-{
-	putchar(',');
-	putchar(' ');
-}
-}
-}
-}
-putchar('\n');
+    for (ones = 0; ones <= 9; ones++)
+    {
+        for (tens = ones + 1; tens <= 9; tens++)
+        {
+            for (hundreds = tens + 1; hundreds <= 9; hundreds++)
+            {
+                if ((ones != tens && (ones != hundreds && (tens != hundreds))))
+                {
+                    putchar(ones + '0');
+                    putchar(tens + '0');
+                    putchar(hundreds + '0');
+                    if ((ones < 7) || ((i == 7) && (tens < 8)) || ((i == 8) && (tens == 9)))
+                    {
+                        putchar(',');
+                        putchar(' ');
+                    }
+                }
+            }
+        }
+    }
 
-return (0);
+    return (0);
 }
