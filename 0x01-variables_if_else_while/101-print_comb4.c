@@ -15,7 +15,7 @@ int main(){
                     putchar(ones + '0');
                     putchar(tens + '0');
                     putchar(hundreds + '0');
-                    if ((ones < 7) || ((i == 7) && (tens < 8)) || ((i == 8) && (tens == 9)))
+                    if ((ones < 7) || ((ones == 7) && (tens < 8)) || ((ones == 8) && (tens == 9)))
                     {
                         putchar(',');
                         putchar(' ');
