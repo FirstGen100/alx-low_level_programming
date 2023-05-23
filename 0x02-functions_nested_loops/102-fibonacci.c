@@ -7,20 +7,20 @@
 */
 int main(void)
 {
-long n = 50, first = 1, second = 2, next, i;
+unsigned int n = 50, first = 1, second = 2, next, i;
 
-printf("%d %d, ", first, second);
+printf("%u %u, ", first, second);
 
 for (i = 2; i < n; i++)
 {
 next = first + second;
 if (i != n - 1)
 {
-printf("%d, ", next);
+printf("%u, ", next);
 }
 else
 {
-printf("%d ", next);
+printf("%u ", next);
 }
 first = second;
 second = next;
