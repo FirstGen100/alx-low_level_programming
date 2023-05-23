@@ -14,7 +14,7 @@ printf("%d, %d, ", first, second);
 for (i = 2; i < n; i++)
 {
 next = first + second;
-if (i != n-1)
+if (i != n - 1)
 {
 printf("%d, ", next);
 }
