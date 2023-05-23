@@ -11,7 +11,8 @@ int n = 50, first = 1, second = 2, next, i;
 
 printf("%d, %d, ", first, second);
 
-for (i = 2; i < n; i++) {
+for (i = 2; i < n; i++)
+{
 next = first + second;
 if (i != n-1)
 {
