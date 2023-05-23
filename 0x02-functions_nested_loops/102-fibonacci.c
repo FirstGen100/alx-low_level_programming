@@ -7,7 +7,7 @@
 */
 int main(void)
 {
-double n = 50, first = 1, second = 2, next, i;
+unsigned int n = 50, first = 1, second = 2, next, i;
 
 printf("%d %d, ", first, second);
 
