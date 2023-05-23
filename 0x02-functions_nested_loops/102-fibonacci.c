@@ -8,7 +8,7 @@
 int main(void)
 {
 int n = 50, first = 1, second = 2, next, i;
-printf("%d %d ", first, second);
+printf("%d, %d ", first, second);
 
 for (i = 2; i < n; i++)
 {
