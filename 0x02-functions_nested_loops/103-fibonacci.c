@@ -22,5 +22,5 @@ curr_num = next_num;
 }
 printf("%d\n", total);
 
-return 0;
+return (0);
 }
