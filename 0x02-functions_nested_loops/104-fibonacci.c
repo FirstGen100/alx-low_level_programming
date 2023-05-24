@@ -7,14 +7,14 @@
 */
 int main(void)
 {
-long num1 = 1, num2 = 2, next, count;
+unsigned long num1 = 1, num2 = 2, next, count;
 
-printf("%ld, %ld, ", num1, num2);
+printf("%lu, %lu, ", num1, num2);
 
 for (count = 3; count <= 50; count++)
 {
 next = num1 + num2;
-printf("%ld", next);
+printf("%lu", next);
 
 if (count < 50)
 {
