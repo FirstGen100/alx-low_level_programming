@@ -5,27 +5,27 @@
 *
 * Return: 0 (success)
 */
-int main(void)
+int main()
 {
-unsigned int n = 50, first = 1, second = 2, next, i;
-
-printf("%u %u, ", first, second);
-
-for (i = 2; i < n; i++)
+int num1 = 1, num2 = 2, next, count;
+    
+printf("%d, %d, ", num1, num2);
+    
+for(count = 3; count <= 50; count++)
 {
-next = first + second;
-if (i != n - 1)
+next = num1 + num2;
+printf("%d", next);
+        
+if(count < 50)
 {
-printf("%u, ", next);
+printf(", ");
 }
-else
-{
-printf("%u ", next);
+        
+num1 = num2;
+num2 = next;
 }
-first = second;
-second = next;
-}
-
-printf("\n");
-return (0);
+    
+printf("\n"); // add a newline at the end
+    
+return 0;
 }
