@@ -1,37 +1,27 @@
 #include <stdio.h>
 
 /**
-* main - prints the first 50 fibonacci numbers
+* main - print sum of even numbers in fabonicci sequence
 *
 * Return: 0 (success)
 */
-int main(void)
+int main()
 {
-long num1 = 1, num2 = 2, next, count, sum;
-
-printf("%ld, %ld, ", num1, num2);
-
-for (count = 3; count <= 50; count++)
-{
-next = num1 + num2;
-printf("%ld", next);
-
-if (next < 4000000)
-{
-sum = 2;
-if (next % 2 == 0)
-{
-sum += next;
-}
-else
-{
-break;
-}
-}
-num1 = num2;
-num2 = next;
-}
-printf("%ld\n", sum);
-
-return (0);
+    int prev_num = 1, curr_num = 2, next_num, total = 0;
+    
+    while (curr_num <= 4000000)
+    {
+        if (curr_num % 2 == 0)
+        {
+            total += curr_num;
+        }
+        
+        next_num = prev_num + curr_num;
+        prev_num = curr_num;
+        curr_num = next_num;
+    }
+    
+    printf("%d\n", total);
+    
+    return 0;
 }
