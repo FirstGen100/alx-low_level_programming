@@ -25,7 +25,7 @@ num1 = num2;
 num2 = next;
 }
     
-printf("\n"); // add a newline at the end
+printf("\n");
     
 return 0;
 }
