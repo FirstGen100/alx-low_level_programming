@@ -1,1 +1,2 @@
-Start of C
+Start of c
+print("Hello world");
