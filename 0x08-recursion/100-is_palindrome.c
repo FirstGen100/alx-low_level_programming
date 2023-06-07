@@ -1,13 +1,13 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * palindromeChecker - checks the string
  *
  * @str: the string to be checked
  * @len: the length of the string
- * @i: the incrementor, starts at 0
+ * @i: incrementor
  *
- * Return: 1 if it's a palindrome, 0 if it's not
+ * Return: 1 if it's a palindrome 0 if it's not
  */
 
 int palindromeChecker(char *str, int len, int i)
@@ -22,9 +22,9 @@ int palindromeChecker(char *str, int len, int i)
 /**
  * _strlen_recursion - returns the length of a string
  *
- * @s: the string to check the length of
+ * @s: the string to check the length
  *
- * Return: an integer that displays the length of the string
+ * Return: length of the string
  */
 
 int _strlen_recursion(char *s)
@@ -40,7 +40,7 @@ int _strlen_recursion(char *s)
  *
  * @s: the string to check
  *
- * Return: 1 if it's a palindrome, 2 if it's not
+ * Return: 1 if it's a palindrome, 0 if it's not
  */
 
 int is_palindrome(char *s)
