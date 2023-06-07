@@ -19,3 +19,8 @@ return (&s[i]);
 }
 return (0);
 }
+
+
+
+
+
