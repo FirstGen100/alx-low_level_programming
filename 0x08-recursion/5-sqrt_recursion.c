@@ -18,7 +18,7 @@ int helper_func(int a, int b)
 		return (b);
 
 	else
-		return (helper(a, b + 1));
+		return (helper_func(a, b + 1));
 
 	return (1);
 }
