@@ -31,5 +31,5 @@ int Finder(int a, int b)
 
 int is_prime_number(int n)
 {
-	return (primeFinder(n, 2));
+	return (Finder(n, 2));
 }
