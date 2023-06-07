@@ -1,11 +1,11 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * factorial - returns the factorial of a given number
  *
  * @n: the number to find the factorials of
  *
- * Return: the factorial of @n
+ * Return: the factorial of n
  */
 
 int factorial(int n)
