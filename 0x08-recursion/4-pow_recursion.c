@@ -1,12 +1,12 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _pow_recursion - returns the value of @x raised to the power of @y
+ * _pow_recursion - returns the value of x raised to the power of y
  *
  * @x: number
- * @y: the power to raise @n to
+ * @y: the power to raise x to
  *
- * Return: the value of @x to the @y power
+ * Return: power of x
  */
 
 int _pow_recursion(int x, int y)
