@@ -1,15 +1,15 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * helper - Finds the square root of two numbers
+ * helper_func - Finds the square root of two numbers
  *
  * @a: The number
- * @b: The number to test for the square root of @a
+ * @b: The number to test for the square root of a
  *
  * Return: square root
  */
 
-int helper(int a, int b)
+int helper_func(int a, int b)
 {
 	if (b * b > a)
 		return (-1);
@@ -28,12 +28,12 @@ int helper(int a, int b)
  *
  * @n: the number to return the square root of
  *
- * Return: the square root of @n
+ * Return: the square root of n
  */
 
 int _sqrt_recursion(int n)
 {
 	if (n == 0)
 		return (0);
-	return (helper(n, 1));
+	return (helper_func(n, 1));
 }
