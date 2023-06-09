@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int a, b, result;
-	
+
 	if (argc <= 2)
 	{
 		printf("Error\n");
@@ -20,6 +20,6 @@ int main(int argc, char *argv[])
 	b = atoi(argv[2]);
 	result = a * b;
 	printf("%d\n", result);
-	
+
 	return (0);
 }
