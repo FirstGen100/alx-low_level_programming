@@ -2,7 +2,7 @@
 /**
 *main - start
 *@argc: number of args
-*argv: pointer to argument string
+*@argv: pointer to argument string
 *Return: 0
 */
 int main(int argc, char *argv[])
