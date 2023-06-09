@@ -1,16 +1,12 @@
-#include <stidio.h>
+#include <stdio.h>
 /**
 *@argc: no of args
 *@argv: array of pointers
-*Retur
+*Return: 0
 */
-int m
+int main(int argc, char *argv[])
 {
 	argv = argv;
-
-
-
-
-	
+	printf("%d\n", argc - 1);
 	return (0);
 }
