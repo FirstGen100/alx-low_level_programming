@@ -9,7 +9,7 @@
 int checker(char *a)
 {
 	int a, num, len;
-	
+
 	ii = 0;
 	num = 0;
 	len = strlen(a);
@@ -19,12 +19,12 @@ int checker(char *a)
 		if (a[i] < '0' || a[i] > '9')
 		{
 			return (-1);
-			
+	
 		}
 		else
 		{
 			num = num * 10 + (a[i] - '0');
-			
+	
 		}
 		i++;
 	}
@@ -39,8 +39,9 @@ int checker(char *a)
 int main(int argc, char *argv[])
 {
 	int i, num, sum;
+
 	sum = 0;
-	
+
 	for (i = 1; i < argc; i++)
 	{
 		num = checker(argv[i]);
