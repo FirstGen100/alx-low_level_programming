@@ -1,58 +1,27 @@
-#include <stdlib.h>
 #include <stdio.h>
-/**
-*main - start
-*@argc: no of arguments
-*@argv: pointer to strings
-*Return: number of coins
-*/
-int main(int argc, char *argv[])
-{
-	int amount, coins;
-	
-	if (argc != 2)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	amount = atoi(argv[1]);
-	coins = 0;
-	if (amount > 25)
-	{
-		while (amount >= 5)
-		{
-			amount -= 25;
-			coins++;
-		}
-	}
-	if (amount > 10 && amount < 25)
-	{
-		while (amount >= 10)
-		{
-			amount -= 10;
-			coins++;
-		}
-	}
-	if (amount > 5 && amount < 10)
-	{
-		while (amount > 2)
-		{
-			amount -= 2;
-			coins++;
-		}
-	}
-	if (amount > 2 && amount < 5)
-	{
-		while (amount > 2)
-		{
-			amount -= 2;
-			coins++;
-		}
-	}
-	if (amount == 1 || amount == 2 || amount == 5 || amount == 10 || amount == 25)
-	{
-		coins++;
-	}
-	printf("%d\n", coins);
-	return (0);
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    if (argc != 2) {
+        printf("Error\n");
+        return (1);
+    }
+
+    int cents = atoi(argv[1]);
+    if (cents < 0) {
+        printf("0\n");
+        return (0);
+    }
+
+    int coins[5] = {25, 10, 5, 2, 1};
+    int num_coins = 0;
+    for (int i = 0; i < 5; i++) {
+        while (cents >= coins[i]) {
+            cents -= coins[i];
+            num_coins++;
+        }
+    }
+
+    printf("%d\n", num_coins);
+    return (0);
 }
