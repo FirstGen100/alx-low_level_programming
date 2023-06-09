@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 *main - writes the name
-*@argc - arg count
+*@argc: arg count
 *@argv: array of pointer
 *Return: 0
 */
