@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+/**
+*main - start
+*argc: count of arguments
+*argv: pointer to arguments
+*Return: 0
+*/
 int main(int argc, char *argv[])
 {
 if (argc != 2)
