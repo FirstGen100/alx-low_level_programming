@@ -1,5 +1,6 @@
 #include <stdio.h>
 /**
+*main - start
 *@argc: no of args
 *@argv: array of pointers
 *Return: 0
