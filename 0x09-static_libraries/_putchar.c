@@ -1,10 +1,12 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
-* _putchar - function
+* _putchar - write function
 * @c: character
-* Return: int
+* Return: character(s)
 */
-int _putchar (char c)
+int _putchar(char c)
 {
+        return write(1, &c, 1);
 }
