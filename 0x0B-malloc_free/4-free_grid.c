@@ -23,7 +23,6 @@ char *argstostr(int ac, char **av)
 		size++;
 	}
 	size++;
-
 	strDup = malloc(sizeof(char) * size);
 	if (strDup == NULL)
 	{
