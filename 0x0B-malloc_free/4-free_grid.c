@@ -12,7 +12,9 @@ char *argstostr(int ac, char **av)
 	int i, j, k, size;
 
 	if (ac == 0 || av == NULL)
+	{
 		return (NULL);
+	}
 	size = 0;
 	for (i = 0; i < ac; i++)
 	{
@@ -24,7 +26,9 @@ char *argstostr(int ac, char **av)
 
 	strDup = malloc(sizeof(char) * size);
 	if (strDup == NULL)
+	{
 		return (NULL);
+	}
 	k = 0;
 	for (i = 0; i < ac; i++)
 	{
