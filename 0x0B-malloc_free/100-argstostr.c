@@ -1,11 +1,11 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * *argstostr - concatenates all arguements to the program
+ *argstostr - concatenates all arguements to the program
  * @ac: arguement count
  * @av: pointer to arguements
  * Return: pointer to new space in memory or null
- **/
+ */
 char *argstostr(int ac, char **av)
 {
 	char *strDup;
@@ -14,7 +14,9 @@ char *argstostr(int ac, char **av)
 	if (ac == 0 || av == NULL)
 		return (NULL);
 	size = 0;
-/* count the number of chars in each string */
+/**
+* count the number of chars in each string
+*/
 	for (i = 0; i < ac; i++)
 	{
 		for (j = 0; av[i][j] != '\0'; j++)
@@ -22,8 +24,8 @@ char *argstostr(int ac, char **av)
 		size++;
 	}
 	size++;
-/* allocate memory for total number of chars and
- * new line for each word
+/*
+ * allocate memory for total number of chars and new line for each word
  */
 	strDup = malloc(sizeof(char) * size);
 	if (strDup == NULL)
