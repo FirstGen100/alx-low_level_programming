@@ -1,10 +1,10 @@
 #include "main.h"
 #include <string.h>
 
-size_t strspn(const char *s, const char *accept)
+unsigned int _strspn(char *s, const char *accept)
 {
-    const char *p;
-    const char *a;
+    char *p;
+    char *a;
     size_t count = 0;
 
     for (p = s; *p != '\0'; p++) {
