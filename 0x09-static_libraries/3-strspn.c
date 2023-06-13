@@ -1,6 +1,12 @@
 #include "main.h"
 #include <string.h>
 
+/**
+* _strspn - function
+* @s: variable characters
+* @accept: acceptable chars
+* Return: count
+*/
 unsigned int _strspn(char *s, char *accept)
 {
     char *p;
