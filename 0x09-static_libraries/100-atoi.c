@@ -1,3 +1,11 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+* _atoi - function
+* @s: variable
+* Return: int
+*/
 int _atoi(char *s)
 {
     int sign = 1, result = 0;
