@@ -1,51 +1,46 @@
+#include stdlib.h>
 #include "main.h"
-#include <stdlib.h>
 
 /**
-* string_nconcat - 
-* @s1: destination
-* @s2: source of second string
-* @n: size of second string to concat
-* Return: pointer to new memory
+* string_nconcat - concatenates strings
+* @s1: first string
+
+
+
+
+
+
+* @s2: second string
+* @n: size of second string
+* Return: pointer to memery
 */
-
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_nconcat(char *s1, *char s2, unsigned int n)
 {
-	int count, count1;
-	int sign = n;
-	char *ptr;
-	int len1, len2;
+	char *ptr, *empt;
+	unsigned int i, len, j, size;
 
+	len = 0;
+	empt = "";
 	if (s1 == NULL)
-		s1 = "";
+		s1 = empt;
 	if (s2 == NULL)
-		s2 = "";
-
-	for (len1 = 0; len1 != '\0'; len1++)
-		;
-	for (len2 = 0; len2 != '\0'; len2++)
-		;
-
-	if (sign >= len2)
-	{
-		sign = len2;
-		ptr = malloc(sizeof(char) * (len1 + len2 + 1));
-	}
-	else
-		ptr = malloc(sizeof(char) * (len1 + n + 1));
-
+		s2 = empt;
+	while (s1[len] != '\0')
+		len++;
+	size = (len + n) * sizeof(*ptr);
+	ptr = malloc(size + 1);[H[H[H[H[H[H[H[H[H[H[H[H[H[H[H[H
 	if (ptr == NULL)
+		return(NULL);
+	i = 0;
+	while (i < size && s1[i] != '\0')
 	{
-		return (NULL);
+		ptr[i] = s1[i];
+		i++;
 	}
- 	for (count = 0; count < len1; count++)
+	j = 0;
+	while (i < size && s2 [j] != '\0')
 	{
-		ptr[count] = s1[count];
+		ptr[i] = s2[j];
+		i++;
+		j++;
 	}
-	for (count1 = 0; count1 < sign; count1++)
-	{
-		ptr[count++] = s2[count1];
-	}
-	ptr[count++] = '\0';
-	return (ptr);
-}
