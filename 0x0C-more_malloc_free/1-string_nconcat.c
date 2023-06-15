@@ -1,4 +1,4 @@
-#include stdlib.h>
+#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -8,7 +8,7 @@
 * @n: size of second string
 * Return: pointer to memery
 */
-char *string_nconcat(char *s1, *char s2, unsigned int n)
+char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *ptr, *empt;
 	unsigned int i, len, j, size;
