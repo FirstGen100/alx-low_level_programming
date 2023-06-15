@@ -1,5 +1,5 @@
-#ifndef MAIN.H
-#define MAIN.H
+#ifndef MAIN
+#define MAIN
 #include <stdio.h>
 
 void *malloc_checked(unsigned int b);
