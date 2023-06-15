@@ -1,4 +1,5 @@
-#include "main.h
+#include "main.h"
+#include <stdlib.h>
 /**
 * _realloc - realllocates memory
 * @ptr: pointer to memory
