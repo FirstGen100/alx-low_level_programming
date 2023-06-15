@@ -4,12 +4,6 @@
 /**
 * string_nconcat - concatenates strings
 * @s1: first string
-
-
-
-
-
-
 * @s2: second string
 * @n: size of second string
 * Return: pointer to memery
@@ -28,7 +22,7 @@ char *string_nconcat(char *s1, *char s2, unsigned int n)
 	while (s1[len] != '\0')
 		len++;
 	size = (len + n) * sizeof(*ptr);
-	ptr = malloc(size + 1);[H[H[H[H[H[H[H[H[H[H[H[H[H[H[H[H
+	ptr = malloc(size + 1);
 	if (ptr == NULL)
 		return(NULL);
 	i = 0;
@@ -44,3 +38,6 @@ char *string_nconcat(char *s1, *char s2, unsigned int n)
 		i++;
 		j++;
 	}
+	ptr[i] = '\0';
+	return (ptr);
+}
