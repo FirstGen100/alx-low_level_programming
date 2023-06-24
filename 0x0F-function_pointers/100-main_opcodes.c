@@ -13,7 +13,7 @@ void print_opcodes(unsigned char *start, size_t bytes)
 	{
 		printf("%02x", start[i]);
 		if (i != bytes - 1)
-			printf("");
+			printf(" ");
 	}
 	printf("\n");
 }
