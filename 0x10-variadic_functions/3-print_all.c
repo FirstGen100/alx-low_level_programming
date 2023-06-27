@@ -57,17 +57,17 @@ void print_all(const char * const format, ...)
 	va_list list;
 	char *seperator;
 	int i, j;
-
 	fm_t fm[] = {
-		{"c", print_char},
-		{"i", print_int},
-		{"f", print_floats},
-		{"s", print_strings},
+		{'c', print_char},
+		{'i', print_int},
+		{'f', print_float},
+		{'s', print_string},
 		{NULL, NULL}
 	};
 	va_start(list, format);
 	i = 0;
-	sep = "";
+	seperator = "";
+
 	while (format != NULL && format[i] != '\0')
 	{
 		j = 0;
@@ -75,29 +75,14 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *(fm[j]).fm)
 			{
-				fm[j]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+				fm[j].p(list, seperator);
+				seperator = ", ";
+			}
+			j++;
+		}
+		i++;
+	}
+	printf("\n");
+	va_end(list);
+}
 
