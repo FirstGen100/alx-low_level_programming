@@ -1,81 +1,79 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "variadic_functions"
+#include "variadic_functions.h"
 
 /**
- * print_int - prints integers
- * @list: argument list
- * @seperator: seperator
+ * print_int - pprints int
+ * @args: parameters
  * Return: void
  */
-void print_int(va_list list, char *s)
+void print_int(va_list args)
 {
-	printf("%s%d", s, va_arg(list, int));
+	printf("%d", va_arg(args, int));
 }
 /**
- * print_char - prints characters
- * @list: arguments
- * @seperator: seperator
+ * print_char - prints chars
+ * @args: parameters
  * Return: void
  */
-void print_char(va_list list, char *seperator)
+void print_char(va_list args)
 {
-	printf("%s%c", seperator, va_arg(list, int));
+	printf("%c", va_arg(args, int));
 }
 /**
- * print_string - prints strings
- * @seperator: seperator
- * @list: prints lists
- * Return: void
+ *  * print_string - prints strings
+ *   * @args: parameters
+ *    * Return: void
  */
-void print_string(va_list list, char *seperator)
+void print_string(va_list args)
 {
 	char *s;
 
-	s = va_arg(list, char *);
+	s = va_arg(args, char*);
 	if (s == NULL)
 		s = "(nil)";
-
-	printf("%s%s", seperator, s);
+	printf("%s", s);
 }
 /**
- * print_floats - prints float numbers
- * @seperator: seperator
- * @list: list of items
+ * print_float - prints floats
+ * @args: parameters
  * Return: void
  */
-void print_floats(va_list list, char *seperator)
+void print_float(va_list args)
 {
-	printf("%s%f", seperator, va_arg(list, double));
+	printf("%f", va_arg(args, double));
 }
 /**
  * print_all - prints everything
- * @format: list of all arguments
+ * @format: the format
+ * Return: void
  */
 void print_all(const char * const format, ...)
 {
 	va_list list;
-	char *seperator;
 	int i, j;
-	fm_t fm[] = {
-		{'c', print_char},
-		{'i', print_int},
-		{'f', print_float},
-		{'s', print_string},
+	char *seperator;
+	typ_t arguments[] = {
+		{"c", print_char},
+		{"i", print_int},
+		{"f", print_float},
+		{"s", print_string},
 		{NULL, NULL}
 	};
+
 	va_start(list, format);
 	i = 0;
 	seperator = "";
 
-	while (format != NULL && format[i] != '\0')
+	while (format != NULL && *(format + i) != '\0')
 	{
 		j = 0;
 		while (j < 4)
 		{
-			if (format[i] == *(fm[j]).fm)
+			if (*(format + i) == *(arguments[j]).format)
 			{
-				fm[j].p(list, seperator);
+				printf("%s", seperator);
+				arguments[j].function(list);
 				seperator = ", ";
 			}
 			j++;
@@ -86,3 +84,4 @@ void print_all(const char * const format, ...)
 	va_end(list);
 }
 
+		
