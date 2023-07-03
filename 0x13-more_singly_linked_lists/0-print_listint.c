@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * print_listint - print elements of list
@@ -9,19 +9,16 @@
  */
 size_t print_listint(const listint_t *h)
 {
-	int ptr, count;
+	size_t counter = 0;
 
-	if (ptr ==NULL)
-		printf("List is empty");
-	while (h != NULL)
+	while (h->n != NULL)
 	{
-		printf("%d"
-				
-				
-				, ptr->n);
-		ptr = ptr->next;
+		
+		printf("%d\n", h->n);
 		count++;
+		h = h->next;
 	}
-	return (count);
+	return (counter);
 }
+
 
