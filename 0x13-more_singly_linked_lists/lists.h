@@ -2,7 +2,7 @@
 #define MAIN
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <strings.h>
 /**
 * struct listint_s - singly linked list
 * @n: integer
