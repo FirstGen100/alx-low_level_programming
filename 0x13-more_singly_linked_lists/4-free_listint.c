@@ -5,15 +5,11 @@
  * @head: list
  * Return: void
  */
-void free_listint(listint_t *h)
-
-
-
-
-
-
-
-
-
-
+void free_listint(listint_t *head)
+{
+	if (head == NULL)
+		return (NULL);
+	free_list(head->next);
+	free(head);
+}
 
