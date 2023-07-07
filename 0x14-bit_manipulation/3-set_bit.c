@@ -11,7 +11,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	unsigned long int var;
 
 	if (index >= (sizeof(unsigned long int) * 8))
-		exit(-1);
+		return (-1);
 	var = 1UL << index;
 	*n |= var;
 
