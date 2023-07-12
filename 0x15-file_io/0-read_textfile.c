@@ -25,14 +25,14 @@ size_t read_textfile(const char *filename, size_t letters)
 	if (buffer == NULL)
 		return (0);
 	res_read = read(fd, buffer, letters);
-	
+
 	if (res_read == -1)
 	{
 		free(buffer);
 		return (0);
 	}
 	res_write = write(STDOUT_FILENO, buffer, res_read);
-	
+
 	if (res_write == -1 || res_read != res_write)
 	{
 		free(buffer);
