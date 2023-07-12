@@ -37,6 +37,7 @@ void file_copy(char *filename, char *new_file)
 	file_read = open(filename, O_RDONLY);
 	if (file_read < 0)
 		checker(98, filename);
+
 	file_write = open(new_file, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (file_write < 0)
 	{
@@ -57,13 +58,13 @@ void file_copy(char *filename, char *new_file)
 
 	if (close(file_read) < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", file_read);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_read);
 		close(file_write);
 		exit(100);
 	}
 	if (close(file_write) < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file %d\n", file_write);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", file_write);
 		exit(100);
 	}
 }
@@ -77,7 +78,7 @@ int main(int argc, char *argv[])
 {
 	if (argc != 3)
 	{
-		dprintf(STDERR_FILENO, "Usage: file_copy filename new_file\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 	file_copy(argv[1], argv[2]);
