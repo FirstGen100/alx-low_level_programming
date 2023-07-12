@@ -31,9 +31,9 @@ size_t read_textfile(const char *filename, size_t letters)
 		free(buffer);
 		return (0);
 	}
-	res_write = write(STDOUT_FILEEND, buffer, res_read);
+	res_write = write(STDOUT_FILENO, buffer, res_read);
 	
-	if (res_write == -1) || res_read != res_write)
+	if (res_write == -1 || res_read != res_write)
 	{
 		free(buffer);
 		return (0);
