@@ -7,11 +7,6 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	unsigned long int flag = 1UL << index;
-
-	if ((n & flag) != 0)
-		return (1);
-	else
-		return (0);
+	return ((index > (8 * sizeof(n) - 1)) ? -1 : (int)(n >> index) & 1);
 }
 
