@@ -8,14 +8,14 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int flipper = n ^ m;
+	unsigned int flipper = 0;
 	unsigned int count = 0;
 
-	while (flipper)
+	for (count = 8 * sizeof(n) - 1; count >= 0; count--)
 	{
-		count += flipper & 1;
-		flipper >>= 1;
+		if (((n ^ m) >> count) & 1)
+			flipper++;
 	}
-	return (count);
+	return (flipper);
 }
 
