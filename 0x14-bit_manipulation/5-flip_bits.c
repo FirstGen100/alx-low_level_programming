@@ -11,7 +11,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned int flipper = 0;
 	unsigned int count;
 
-	for (count = 8 * sizeof(n) - 1; count >= 0; count--)
+	for (count = 8 * sizeof(n) - 1; count > 0; count--)
 	{
 		if (((n ^ m) >> count) & 1)
 			flipper++;
