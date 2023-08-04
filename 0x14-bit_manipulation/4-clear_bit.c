@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * clear_bit -
+ * clear_bit - sets a bit to 0
  * @n: given bits
  * @index: required change
  * Return: int
