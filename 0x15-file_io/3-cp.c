@@ -23,38 +23,35 @@ int main(int argc, char *argv[])
  */
 void cp(char *file_from, char *file_to)
 {
-	int directory, dir_write;
-	int f_write, f_read;
-	char *buffer[1024];
+	int fd_read, res_read, fd_write, res_write;
+	char *buf[1024];
 
-	directory = open(file_from, O_RDONLY);
-	if (directory < 0)
-	{
+	fd_read = open(file_from, O_RDONLY);
+	if (fd_read < 0)
 		print_error(98, file_from);
-	}
-	dir_write = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	if (dir_write < 0)
+	fd_write = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	if (fd_write < 0)
 	{
-		close(directory);
+		close(fd_read);
 		print_error(99, file_to);
 	}
 	do {
-		f_read = read(directory, buffer, 1024);
-		if (f_read < 0)
+		res_read = read(fd_read, buf, 1024);
+		if (res_read < 0)
 			print_error(98, file_from);
-		f_write = write(dir_write, buffer, f_read);
-		if (f_write < f_read)
+		res_write = write(fd_write, buf, res_read);
+		if (res_write < res_read)
 			print_error(99, file_to);
-	} while (f_write == 1024);
-	if (close(directory) < 0)
+	}	while (res_write == 1024);
+	if (close(fd_read) < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file directory %d\n", directory);
-		close(dir_write);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_read);
+		close(fd_write);
 		exit(100);
 	}
-	if (close(dir_write) < 0)
+	if (close(fd_write) < 0)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't close file directory %d\n", dir_write);
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_write);
 		exit(100);
 	}
 }
@@ -71,9 +68,9 @@ void print_error(int err, char *filename)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
 		exit(98);
 	}
-	else if (err == 99)
+	if (err == 99)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", filename);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
 		exit(99);
 	}
 }
